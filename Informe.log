@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.30)  30 JUN 2020 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7300 64-bit) (preloaded format=pdflatex 2020.3.30)  9 JUL 2020 12:16
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -790,7 +790,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
 ("C:\Users\Isaia\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Fig/a_b.png, id=78, 639.89063pt x 283.0575pt>
+<Fig/a_b.png, id=90, 639.89063pt x 283.0575pt>
 File: Fig/a_b.png Graphic file (type png)
 <use Fig/a_b.png>
 Package pdftex.def Info: Fig/a_b.png  used on input line 63.
@@ -800,7 +800,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 63--64
  [][] 
  []
 
-<Fig/t_f.png, id=80, 433.62pt x 489.32813pt>
+<Fig/t_f.png, id=92, 433.62pt x 489.32813pt>
 File: Fig/t_f.png Graphic file (type png)
 <use Fig/t_f.png>
 Package pdftex.def Info: Fig/t_f.png  used on input line 69.
@@ -817,7 +817,7 @@ Underfull \vbox (badness 5771) has occurred while \output is active []
 
 
 ]
-<Fig/Wavelets.jpeg, id=102, 530.98375pt x 511.9125pt>
+<Fig/Wavelets.jpeg, id=114, 530.98375pt x 511.9125pt>
 File: Fig/Wavelets.jpeg Graphic file (type jpg)
 <use Fig/Wavelets.jpeg>
 Package pdftex.def Info: Fig/Wavelets.jpeg  used on input line 79.
@@ -852,7 +852,7 @@ LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 184.
 
-<Fig/Tree.png, id=122, 544.28343pt x 517.935pt>
+<Fig/Tree.png, id=134, 544.28343pt x 517.935pt>
 File: Fig/Tree.png Graphic file (type png)
 <use Fig/Tree.png>
 Package pdftex.def Info: Fig/Tree.png  used on input line 188.
@@ -867,7 +867,7 @@ LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 193.
 
 [3 <./Fig/Tree.png>]
-<Fig/bancofiltros1D.png, id=149, 428.19975pt x 145.14224pt>
+<Fig/bancofiltros1D.png, id=161, 428.19975pt x 145.14224pt>
 File: Fig/bancofiltros1D.png Graphic file (type png)
 <use Fig/bancofiltros1D.png>
 Package pdftex.def Info: Fig/bancofiltros1D.png  used on input line 293.
@@ -877,7 +877,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 293--294
  [][] 
  []
 
-<Fig/bancofiltros.png, id=151, 252.34274pt x 173.448pt>
+<Fig/bancofiltros.png, id=163, 252.34274pt x 173.448pt>
 File: Fig/bancofiltros.png Graphic file (type png)
 <use Fig/bancofiltros.png>
 Package pdftex.def Info: Fig/bancofiltros.png  used on input line 324.
@@ -887,7 +887,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 324--325
  [][] 
  []
 
-<Fig/bancofiltrosR.png, id=153, 239.6955pt x 174.6525pt>
+<Fig/bancofiltrosR.png, id=165, 239.6955pt x 174.6525pt>
 File: Fig/bancofiltrosR.png Graphic file (type png)
 <use Fig/bancofiltrosR.png>
 Package pdftex.def Info: Fig/bancofiltrosR.png  used on input line 341.
@@ -932,7 +932,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 349--356
 
  []
 
-<Fig/Umbral.png, id=178, 714.41907pt x 249.18094pt>
+<Fig/Umbral.png, id=190, 714.41907pt x 249.18094pt>
 File: Fig/Umbral.png Graphic file (type png)
 <use Fig/Umbral.png>
 Package pdftex.def Info: Fig/Umbral.png  used on input line 359.
@@ -995,117 +995,105 @@ LaTeX Font Warning: Font shape `TS1/ptm/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
 (Font)              for symbol `textbullet' on input line 472.
 
-<Fig/Lenna.jpg, id=199, 513.92pt x 513.92pt>
+<Fig/Lenna.jpg, id=211, 513.92pt x 513.92pt>
 File: Fig/Lenna.jpg Graphic file (type jpg)
 <use Fig/Lenna.jpg>
-Package pdftex.def Info: Fig/Lenna.jpg  used on input line 496.
+Package pdftex.def Info: Fig/Lenna.jpg  used on input line 495.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
-<Fig/House.jpg, id=200, 513.92pt x 513.92pt>
+<Fig/House.jpg, id=212, 513.92pt x 513.92pt>
 File: Fig/House.jpg Graphic file (type jpg)
 <use Fig/House.jpg>
-Package pdftex.def Info: Fig/House.jpg  used on input line 504.
+Package pdftex.def Info: Fig/House.jpg  used on input line 503.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
-<Fig/Wave.jpg, id=201, 513.92pt x 513.92pt>
+<Fig/Wave.jpg, id=213, 513.92pt x 513.92pt>
 File: Fig/Wave.jpg Graphic file (type jpg)
 <use Fig/Wave.jpg>
-Package pdftex.def Info: Fig/Wave.jpg  used on input line 512.
+Package pdftex.def Info: Fig/Wave.jpg  used on input line 511.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
 
-LaTeX Warning: Float too large for page by 4.18678pt on input line 521.
+LaTeX Warning: Float too large for page by 4.18678pt on input line 520.
 
-<Fig/6_normal_soft_sym8_Lenna.jpg, id=203, 513.92pt x 513.92pt>
+<Fig/6_normal_soft_sym8_Lenna.jpg, id=215, 513.92pt x 513.92pt>
 File: Fig/6_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/6_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/6_normal_soft_sym8_Lenna.jpg  used on input line 5
-37.
+36.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
-<Fig/6_normal_soft_sym8_House.jpg, id=204, 513.92pt x 513.92pt>
+<Fig/6_normal_soft_sym8_House.jpg, id=216, 513.92pt x 513.92pt>
 File: Fig/6_normal_soft_sym8_House.jpg Graphic file (type jpg)
 <use Fig/6_normal_soft_sym8_House.jpg>
 Package pdftex.def Info: Fig/6_normal_soft_sym8_House.jpg  used on input line 5
-45.
+44.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
-<Fig/6_normal_soft_sym8_Wave.jpg, id=205, 513.92pt x 513.92pt>
+<Fig/6_normal_soft_sym8_Wave.jpg, id=217, 513.92pt x 513.92pt>
 File: Fig/6_normal_soft_sym8_Wave.jpg Graphic file (type jpg)
 <use Fig/6_normal_soft_sym8_Wave.jpg>
 Package pdftex.def Info: Fig/6_normal_soft_sym8_Wave.jpg  used on input line 55
-3.
+2.
 (pdftex.def)             Requested size: 206.39685pt x 206.39558pt.
 
-LaTeX Warning: Float too large for page by 4.18678pt on input line 562.
+LaTeX Warning: Float too large for page by 4.18678pt on input line 561.
 
 [6] [7 <./Fig/Lenna.jpg> <./Fig/House.jpg> <./Fig/Wave.jpg> <./Fig/6_normal_sof
 t_sym8_Lenna.jpg> <./Fig/6_normal_soft_sym8_House.jpg> <./Fig/6_normal_soft_sym
 8_Wave.jpg>]
 LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 5
-70.
-LaTeX Font Info:    No file OMSptm.fd. on input line 570.
+78.
+LaTeX Font Info:    No file OMSptm.fd. on input line 578.
 
 
 LaTeX Font Warning: Font shape `OMS/ptm/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 570.
+(Font)              for symbol `textbackslash' on input line 578.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 572.
+(Font)              using `OT1/ptm/bx/n' instead on input line 580.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 573.
+(Font)              using `OT1/ptm/bx/n' instead on input line 581.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 574.
+(Font)              using `OT1/ptm/bx/n' instead on input line 582.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 587.
+(Font)              using `OT1/ptm/bx/n' instead on input line 595.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 588.
+(Font)              using `OT1/ptm/bx/n' instead on input line 596.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 589.
+(Font)              using `OT1/ptm/bx/n' instead on input line 597.
 
-<Fig/Levels/1_normal_soft_sym8_Lenna.jpg, id=227, 513.92pt x 513.92pt>
+<Fig/Levels/1_normal_soft_sym8_Lenna.jpg, id=239, 513.92pt x 513.92pt>
 File: Fig/Levels/1_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Levels/1_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Levels/1_normal_soft_sym8_Lenna.jpg  used on input
- line 600.
+ line 608.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Levels/2_normal_soft_sym8_Lenna.jpg, id=228, 513.92pt x 513.92pt>
+<Fig/Levels/2_normal_soft_sym8_Lenna.jpg, id=240, 513.92pt x 513.92pt>
 File: Fig/Levels/2_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Levels/2_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Levels/2_normal_soft_sym8_Lenna.jpg  used on input
- line 608.
+ line 616.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Levels/4_normal_soft_sym8_Lenna.jpg, id=229, 513.92pt x 513.92pt>
+<Fig/Levels/4_normal_soft_sym8_Lenna.jpg, id=241, 513.92pt x 513.92pt>
 File: Fig/Levels/4_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Levels/4_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Levels/4_normal_soft_sym8_Lenna.jpg  used on input
- line 616.
+ line 624.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Levels/6_normal_soft_sym8_Lenna.jpg, id=230, 513.92pt x 513.92pt>
+<Fig/Levels/6_normal_soft_sym8_Lenna.jpg, id=242, 513.92pt x 513.92pt>
 File: Fig/Levels/6_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Levels/6_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Levels/6_normal_soft_sym8_Lenna.jpg  used on input
- line 623.
+ line 631.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-
-LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 638.
-
-
-LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 639.
-
-
-LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 640.
-
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 652.
@@ -1118,89 +1106,111 @@ LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
 (Font)              using `OT1/ptm/bx/n' instead on input line 654.
 
-<Fig/Modes/2_normal_soft_sym8_House.jpg, id=231, 513.92pt x 513.92pt>
+
+LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
+(Font)              using `OT1/ptm/bx/n' instead on input line 666.
+
+
+LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
+(Font)              using `OT1/ptm/bx/n' instead on input line 667.
+
+
+LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
+(Font)              using `OT1/ptm/bx/n' instead on input line 668.
+
+<Fig/Modes/2_normal_soft_sym8_House.jpg, id=243, 513.92pt x 513.92pt>
 File: Fig/Modes/2_normal_soft_sym8_House.jpg Graphic file (type jpg)
 <use Fig/Modes/2_normal_soft_sym8_House.jpg>
 Package pdftex.def Info: Fig/Modes/2_normal_soft_sym8_House.jpg  used on input 
-line 664.
+line 678.
 (pdftex.def)             Requested size: 123.84283pt x 123.83734pt.
-<Fig/Modes/2_normal_hard_sym8_House.jpg, id=232, 513.92pt x 513.92pt>
+<Fig/Modes/2_normal_hard_sym8_House.jpg, id=244, 513.92pt x 513.92pt>
 File: Fig/Modes/2_normal_hard_sym8_House.jpg Graphic file (type jpg)
 <use Fig/Modes/2_normal_hard_sym8_House.jpg>
 Package pdftex.def Info: Fig/Modes/2_normal_hard_sym8_House.jpg  used on input 
-line 672.
+line 686.
 (pdftex.def)             Requested size: 123.84283pt x 123.83734pt.
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 688.
+(Font)              using `OT1/ptm/bx/n' instead on input line 707.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 689.
+(Font)              using `OT1/ptm/bx/n' instead on input line 708.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 690.
+(Font)              using `OT1/ptm/bx/n' instead on input line 709.
+
+
+Overfull \hbox (8.78038pt too wide) in paragraph at lines 703--713
+ [][] 
+ []
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 702.
+(Font)              using `OT1/ptm/bx/n' instead on input line 721.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 703.
+(Font)              using `OT1/ptm/bx/n' instead on input line 722.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 704.
+(Font)              using `OT1/ptm/bx/n' instead on input line 723.
 
-<Fig/Wav/2_normal_soft_haar_Wave.jpg, id=233, 513.92pt x 513.92pt>
+
+Overfull \hbox (8.78038pt too wide) in paragraph at lines 717--727
+ [][] 
+ []
+
+<Fig/Wav/2_normal_soft_haar_Wave.jpg, id=246, 513.92pt x 513.92pt>
 File: Fig/Wav/2_normal_soft_haar_Wave.jpg Graphic file (type jpg)
 <use Fig/Wav/2_normal_soft_haar_Wave.jpg>
 Package pdftex.def Info: Fig/Wav/2_normal_soft_haar_Wave.jpg  used on input lin
-e 714.
+e 733.
 (pdftex.def)             Requested size: 103.19843pt x 103.19778pt.
-<Fig/Wav/2_normal_soft_db4_Wave.jpg, id=234, 513.92pt x 513.92pt>
+<Fig/Wav/2_normal_soft_db4_Wave.jpg, id=247, 513.92pt x 513.92pt>
 File: Fig/Wav/2_normal_soft_db4_Wave.jpg Graphic file (type jpg)
 <use Fig/Wav/2_normal_soft_db4_Wave.jpg>
 Package pdftex.def Info: Fig/Wav/2_normal_soft_db4_Wave.jpg  used on input line
- 722.
+ 741.
 (pdftex.def)             Requested size: 103.19843pt x 103.19778pt.
-<Fig/Wav/2_normal_soft_sym8_Wave.jpg, id=235, 513.92pt x 513.92pt>
+<Fig/Wav/2_normal_soft_sym8_Wave.jpg, id=248, 513.92pt x 513.92pt>
 File: Fig/Wav/2_normal_soft_sym8_Wave.jpg Graphic file (type jpg)
 <use Fig/Wav/2_normal_soft_sym8_Wave.jpg>
 Package pdftex.def Info: Fig/Wav/2_normal_soft_sym8_Wave.jpg  used on input lin
-e 729.
+e 748.
 (pdftex.def)             Requested size: 103.19843pt x 103.19778pt.
-<Fig/Thr/2_universal_soft_sym8_Lenna.jpg, id=236, 513.92pt x 513.92pt>
+<Fig/Thr/2_universal_soft_sym8_Lenna.jpg, id=249, 513.92pt x 513.92pt>
 File: Fig/Thr/2_universal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Thr/2_universal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Thr/2_universal_soft_sym8_Lenna.jpg  used on input
- line 743.
+ line 762.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Thr/2_bayes_soft_sym8_Lenna.jpg, id=237, 513.92pt x 513.92pt>
+<Fig/Thr/2_bayes_soft_sym8_Lenna.jpg, id=250, 513.92pt x 513.92pt>
 File: Fig/Thr/2_bayes_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Thr/2_bayes_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Thr/2_bayes_soft_sym8_Lenna.jpg  used on input lin
-e 751.
+e 770.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Thr/2_level_soft_sym8_Lenna.jpg, id=238, 513.92pt x 513.92pt>
+<Fig/Thr/2_level_soft_sym8_Lenna.jpg, id=251, 513.92pt x 513.92pt>
 File: Fig/Thr/2_level_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Thr/2_level_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Thr/2_level_soft_sym8_Lenna.jpg  used on input lin
-e 759.
+e 778.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Thr/2_normal_soft_sym8_Lenna.jpg, id=239, 513.92pt x 513.92pt>
+<Fig/Thr/2_normal_soft_sym8_Lenna.jpg, id=252, 513.92pt x 513.92pt>
 File: Fig/Thr/2_normal_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Thr/2_normal_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Thr/2_normal_soft_sym8_Lenna.jpg  used on input li
-ne 766.
+ne 785.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
-<Fig/Thr/2_awt_soft_sym8_Lenna.jpg, id=240, 513.92pt x 513.92pt>
+<Fig/Thr/2_awt_soft_sym8_Lenna.jpg, id=253, 513.92pt x 513.92pt>
 File: Fig/Thr/2_awt_soft_sym8_Lenna.jpg Graphic file (type jpg)
 <use Fig/Thr/2_awt_soft_sym8_Lenna.jpg>
 Package pdftex.def Info: Fig/Thr/2_awt_soft_sym8_Lenna.jpg  used on input line 
-773.
+792.
 (pdftex.def)             Requested size: 113.52063pt x 113.51756pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1211,148 +1221,152 @@ _soft_sym8_Lenna.jpg> <./Fig/Modes/2_normal_soft_sym8_House.jpg> <./Fig/Modes/2
 _normal_hard_sym8_House.jpg>]
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 788.
+(Font)              using `OT1/ptm/bx/n' instead on input line 809.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 789.
+(Font)              using `OT1/ptm/bx/n' instead on input line 810.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 790.
+(Font)              using `OT1/ptm/bx/n' instead on input line 811.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 803.
+(Font)              using `OT1/ptm/bx/n' instead on input line 824.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 804.
+(Font)              using `OT1/ptm/bx/n' instead on input line 825.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 805.
+(Font)              using `OT1/ptm/bx/n' instead on input line 826.
 
-<Fig/comparacion/wavelet_House.jpg, id=255, 513.92pt x 513.92pt>
+<Fig/comparacion/wavelet_House.jpg, id=268, 513.92pt x 513.92pt>
 File: Fig/comparacion/wavelet_House.jpg Graphic file (type jpg)
 <use Fig/comparacion/wavelet_House.jpg>
 Package pdftex.def Info: Fig/comparacion/wavelet_House.jpg  used on input line 
-819.
+843.
 (pdftex.def)             Requested size: 180.60315pt x 180.60397pt.
-<Fig/comparacion/wiener_House.jpg, id=256, 513.92pt x 513.92pt>
+<Fig/comparacion/wiener_House.jpg, id=269, 513.92pt x 513.92pt>
 File: Fig/comparacion/wiener_House.jpg Graphic file (type jpg)
 <use Fig/comparacion/wiener_House.jpg>
 Package pdftex.def Info: Fig/comparacion/wiener_House.jpg  used on input line 8
-27.
+51.
 (pdftex.def)             Requested size: 180.60315pt x 180.60397pt.
-<Fig/comparacion/gaussian_House.jpg, id=257, 513.92pt x 513.92pt>
+<Fig/comparacion/gaussian_House.jpg, id=270, 513.92pt x 513.92pt>
 File: Fig/comparacion/gaussian_House.jpg Graphic file (type jpg)
 <use Fig/comparacion/gaussian_House.jpg>
 Package pdftex.def Info: Fig/comparacion/gaussian_House.jpg  used on input line
- 834.
+ 858.
 (pdftex.def)             Requested size: 180.60315pt x 180.60397pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 845.
+               Default added (so using `tbp') on input line 869.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 851.
+(Font)              using `OT1/ptm/bx/n' instead on input line 875.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 852.
+(Font)              using `OT1/ptm/bx/n' instead on input line 876.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 853.
+(Font)              using `OT1/ptm/bx/n' instead on input line 877.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1810) has occurred while \output is active []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (372.16478pt too high) has occurred while \output is active []
 
- [9 <./Fig/Wav/2_normal_soft_haar_Wave.jpg> <./Fig/Wav/2_normal_soft_db4_Wave.j
-pg> <./Fig/Wav/2_normal_soft_sym8_Wave.jpg> <./Fig/Thr/2_universal_soft_sym8_Le
-nna.jpg> <./Fig/Thr/2_bayes_soft_sym8_Lenna.jpg> <./Fig/Thr/2_level_soft_sym8_L
-enna.jpg> <./Fig/Thr/2_normal_soft_sym8_Lenna.jpg> <./Fig/Thr/2_awt_soft_sym8_L
-enna.jpg>]
+
+[9 <./Fig/Wav/2_normal_soft_haar_Wave.jpg> <./Fig/Wav/2_normal_soft_db4_Wave.jp
+g> <./Fig/Wav/2_normal_soft_sym8_Wave.jpg> <./Fig/Thr/2_universal_soft_sym8_Len
+na.jpg> <./Fig/Thr/2_bayes_soft_sym8_Lenna.jpg> <./Fig/Thr/2_level_soft_sym8_Le
+nna.jpg> <./Fig/Thr/2_normal_soft_sym8_Lenna.jpg> <./Fig/Thr/2_awt_soft_sym8_Le
+nna.jpg> <./Fig/comparacion/wavelet_House.jpg> <./Fig/comparacion/wiener_House.
+jpg> <./Fig/comparacion/gaussian_House.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 859.
+               Default added (so using `tbp') on input line 883.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 865.
+(Font)              using `OT1/ptm/bx/n' instead on input line 889.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 866.
+(Font)              using `OT1/ptm/bx/n' instead on input line 890.
 
 
 LaTeX Font Warning: Font shape `OT1/ptm/b/n' undefined
-(Font)              using `OT1/ptm/bx/n' instead on input line 867.
+(Font)              using `OT1/ptm/bx/n' instead on input line 891.
 
-<Fig/real/0.jpg, id=267, 513.92pt x 513.92pt>
+<Fig/real/0.jpg, id=284, 513.92pt x 513.92pt>
 File: Fig/real/0.jpg Graphic file (type jpg)
 <use Fig/real/0.jpg>
-Package pdftex.def Info: Fig/real/0.jpg  used on input line 883.
+Package pdftex.def Info: Fig/real/0.jpg  used on input line 907.
 (pdftex.def)             Requested size: 190.91748pt x 190.91591pt.
-<Fig/real/0-f.jpg, id=268, 513.92pt x 513.92pt>
+<Fig/real/0-f.jpg, id=285, 513.92pt x 513.92pt>
 File: Fig/real/0-f.jpg Graphic file (type jpg)
 <use Fig/real/0-f.jpg>
-Package pdftex.def Info: Fig/real/0-f.jpg  used on input line 891.
+Package pdftex.def Info: Fig/real/0-f.jpg  used on input line 915.
 (pdftex.def)             Requested size: 190.91748pt x 190.91591pt.
-<Fig/real/1.jpg, id=269, 513.92pt x 513.92pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<Fig/real/1.jpg, id=286, 513.92pt x 513.92pt>
 File: Fig/real/1.jpg Graphic file (type jpg)
 <use Fig/real/1.jpg>
-Package pdftex.def Info: Fig/real/1.jpg  used on input line 906.
+Package pdftex.def Info: Fig/real/1.jpg  used on input line 930.
 (pdftex.def)             Requested size: 190.91748pt x 190.91591pt.
-<Fig/real/1-f.jpg, id=270, 513.92pt x 513.92pt>
+<Fig/real/1-f.jpg, id=287, 513.92pt x 513.92pt>
 File: Fig/real/1-f.jpg Graphic file (type jpg)
 <use Fig/real/1-f.jpg>
-Package pdftex.def Info: Fig/real/1-f.jpg  used on input line 914.
+Package pdftex.def Info: Fig/real/1-f.jpg  used on input line 938.
 (pdftex.def)             Requested size: 190.91748pt x 190.91591pt.
 
-Underfull \vbox (badness 1715) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./Fig/comparacion/wavelet_House.jpg> <./Fig/comparacion/wiener_House.jpg>
- <./Fig/comparacion/gaussian_House.jpg> <./Fig/real/0.jpg> <./Fig/real/0-f.jpg>
-] [11 <./Fig/real/1.jpg> <./Fig/real/1-f.jpg>]
-<Fig/Lennalimpia.jpeg, id=290, 712.6625pt x 714.67pt>
+ [10 <./Fig/real/0.jpg> <./Fig/real/0-f.jpg>] [11 <./Fig/real/1.jpg> <./Fig/rea
+l/1-f.jpg>]
+<Fig/Lennalimpia.jpeg, id=305, 712.6625pt x 714.67pt>
 File: Fig/Lennalimpia.jpeg Graphic file (type jpg)
 <use Fig/Lennalimpia.jpeg>
-Package pdftex.def Info: Fig/Lennalimpia.jpeg  used on input line 949.
+Package pdftex.def Info: Fig/Lennalimpia.jpeg  used on input line 976.
 (pdftex.def)             Requested size: 154.80157pt x 155.23227pt.
-<Fig/houselimpia.jpeg, id=291, 714.67pt x 715.67375pt>
+<Fig/houselimpia.jpeg, id=306, 714.67pt x 715.67375pt>
 File: Fig/houselimpia.jpeg Graphic file (type jpg)
 <use Fig/houselimpia.jpeg>
-Package pdftex.def Info: Fig/houselimpia.jpeg  used on input line 957.
+Package pdftex.def Info: Fig/houselimpia.jpeg  used on input line 984.
 (pdftex.def)             Requested size: 154.80157pt x 155.01347pt.
-<Fig/wavelimpia.jpeg, id=292, 713.66624pt x 716.6775pt>
+<Fig/wavelimpia.jpeg, id=307, 713.66624pt x 716.6775pt>
 File: Fig/wavelimpia.jpeg Graphic file (type jpg)
 <use Fig/wavelimpia.jpeg>
-Package pdftex.def Info: Fig/wavelimpia.jpeg  used on input line 965.
+Package pdftex.def Info: Fig/wavelimpia.jpeg  used on input line 992.
 (pdftex.def)             Requested size: 154.80157pt x 155.44962pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 985--986
+Underfull \hbox (badness 10000) in paragraph at lines 1012--1013
 []\OT1/cmr/m/n/8 Algortimos pa-ra re-duc-cion de rui-do en se~nales -
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1014.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1027.
 [12 <./Fig/Lennalimpia.jpeg> <./Fig/houselimpia.jpeg> <./Fig/wavelimpia.jpeg>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1014.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1027.
 
 (Informe.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1014.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1014.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1027.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1027.
 
 Package rerunfilecheck Info: File `Informe.out' has not changed.
-(rerunfilecheck)             Checksum: 5F30EC8431E5DA42BE04A50E35FEC857;1153.
+(rerunfilecheck)             Checksum: 1C0968CB8CC870C2263867CF1ACED7D7;1509.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1360,16 +1374,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1014.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1027.
  ) 
 Here is how much of TeX's memory you used:
- 10133 strings out of 481556
- 164227 string characters out of 2913869
- 453702 words of memory out of 3000000
- 25054 multiletter control sequences out of 15000+200000
+ 10139 strings out of 481556
+ 164393 string characters out of 2913869
+ 452080 words of memory out of 3000000
+ 25057 multiletter control sequences out of 15000+200000
  539266 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,9n,46p,1833b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,9n,46p,967b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmex10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmmi10.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/f
@@ -1387,9 +1401,9 @@ Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Is
 aia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm1
 0.pfb><C:/Users/Isaia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
 onts/symbols/msbm7.pfb>
-Output written on Informe.pdf (12 pages, 3646017 bytes).
+Output written on Informe.pdf (12 pages, 3650044 bytes).
 PDF statistics:
- 367 PDF objects out of 1000 (max. 8388607)
- 107 named destinations out of 1000 (max. 500000)
- 335 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 110 named destinations out of 1000 (max. 500000)
+ 359 words of extra memory for PDF output out of 10000 (max. 10000000)
 
