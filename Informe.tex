@@ -56,19 +56,13 @@ Por otro lado, la transformada de wavelet queda definida como \cite{CT}:
 C_{f} (a,b) = \int_{-\infty}^{+\infty} x(t) \overline{\psi_{a,b} (t)} dt
 \end{equation}
 
-Donde $\psi_{a,b}(t)$ es la función que se utiliza para analizar a la señal $x(t)$ que se quiera estudiar. Realizando una analogía con Fourier, el trabajo que realiza $\psi_{a,b}(t)$, es el mismo que el de las exponenciales complejas $e^{- j \omega t}$. El resultado de esta transformada es una familia de coeficientes  $C_{f} (a,b)$ que representan la señal teniendo en cuenta la wavelet madre utilizada. Es notorio que el resultado es bidimensional ya que $a$ y $b$ son parámetros independientes. Donde $a$ está relacionado con la frecuencia que posee la señal y $b$ nos brinda información del momento temporal que se analiza. En la Fig.\ref{fig.a_b} se puede ver de mejor manera, donde el gráfico superior muestra cómo cambia la frecuencia de una señal en función de la traslación $b$, en específico en $b_0$. Y el gráfico inferior muestra el resultado de la transformada, evidenciando en el tiempo $b_0$ el cambio de frecuencia.
+Donde $\psi_{a,b}(t)$ es la función que se utiliza para analizar a la señal $x(t)$ que se quiera estudiar. Realizando una analogía con Fourier, el trabajo que realiza $\psi_{a,b}(t)$, es el mismo que el de las exponenciales complejas $e^{- j \omega t}$. El resultado de esta transformada es una familia de coeficientes  $C_{f} (a,b)$ que representan la señal teniendo en cuenta la wavelet madre utilizada. Es notorio que el resultado es bidimensional ya que $a$ y $b$ son parámetros independientes. Donde $a$ está relacionado con la frecuencia que posee la señal y $b$ nos brinda información del momento temporal que se analiza. 
 
 \begin{figure}[htb]
 	\centering
 	\includegraphics[width=.5\textwidth]{Fig/a_b}
 	\caption{Traslación y escalamiento de una wavelet.}
 	\label{fig.a_b1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=.5\textwidth]{Fig/t_f}
-	\caption{Representación del resultado de transformada wavelet en relación a los coeficientes de traslación y escala.}
-	\label{fig.a_b}
 \end{figure}
 
 Por lo tanto, el uso de wavelets permite realizar un análisis paulatino en tiempo y frecuencia como se mencionó anteriormente. 
@@ -113,7 +107,8 @@ Por otro lado, se define a $W_j$ como el complemento ortogonal de $V_j$ en $V_{j
 V_{j-1} = V_j \oplus W_j
 \end{equation}
 
-$W_j$ es llamado conjunto de \textbf{detalle} debido a que la proyección ortogonal de la señal en este espacio son los detalles, y $V_j$ espacio de \textbf{aproximación}, ya que la proyección ortogonal de la señal sobre este espacio son las aproximaciones. Con lo cual, se puede reescribir la eq.\ref{Central} como:
+Los $V_{j}$ son los espacios de \textbf{aproximación} ya que si proyectamos ortogonalmente la señal de interés en este espacio obtenemos una señal $A_{j}(t)$ que mejora a medida que j decrece, es decir que $A_{j}(t)$ tiende a la señal a medida que j tiende a $-\infty$. A su vez $W_{j}$ es llamado conjunto de \textbf{detalle} debido a que la proyección ortogonal de la señal en este espacio brinda la señal $D_{j}(t)$ encargada de corregir a $A_{j}(t)$ para mejorar la aproximación a la señal original.[mischel misti pagina 45].
+A raiz de esto podemos definir la señal de aproximacion $A_{j-1}(t)$ como :  
 
 \begin{equation}
 \label{NivApDet}
@@ -147,15 +142,18 @@ Donde los coeficientes $\alpha _{j,k}$ se relacionan con la diferencia entre pro
 \end{equation}
 La función $\psi \in L^{2}(\mathbb{R})$, y $\{T_k \psi \}_{k \in \mathbb{Z}}$ son una base ortonormal de $W_0$
 
+Antes de proseguir se definirá el significado del subindice j, presente en el análisis anterior. Este subindice hace referencia al nivel de descomposición del espacio de aproximación en su espacio de aproximación y detalles en un nivel superior. Si reescribimos la eq.\ref{Central} de la siguiente forma:
+
+
 %Discutir si poner la proposicion 1
-Para dar un cierre a la idea de multiresolución se profundiza en la eq.\ref{Central} que es el punto más fuerte de esta técnica. Se reescribe de la siguiente manera:
+%Para dar un cierre a la idea de multiresolución se profundiza en la eq.\ref{Central} que es el punto más fuerte de esta técnica. Se reescribe de la siguiente manera:
 
 \begin{equation}
 V_J = V_K \oplus W_K \oplus ... \oplus W_{J+1}, \: J<K
 \label{eq.Vj}
 \end{equation}
-
-La eq.\ref{eq.Vj} expresa que es posible pasar de un nivel de resolución $J$ a cualquier nivel superior sumando los sucesivos detalles de los niveles inferiores. Es decir, la aproximación mejora a medida que el nivel $J$ decrece. También se observa que cualquier nivel de resolución $V_j$ se puede expresar como:
+A partir de esto se deduce que es posible descomponer a un espacio de aproximación de nivel J en la suma de un espacio de aproximación en un nivel inferior y los espacios de detalle correspondientes a ese nivel. Por lo tanto el nivel de descomposición se relaciona con la cantidad de detalles que se utilizara para estudiar la señal de interés. Resumiendo eq.\ref{eq.Vj} expresa que es posible pasar de un nivel de resolución $j$ a cualquier nivel superior sumando los sucesivos detalles de los niveles inferiores. Esto mejora la aproximación de la señal a medida que el nivel $J$ decrece. 
+Se observa que cualquier nivel de resolución $V_j$ se puede expresar como:
 
 \begin{equation}
 \label{NiveDet}
@@ -175,7 +173,7 @@ A partir de las eq.\ref{NiveDet} y \ref{NiveDet2} se puede ver que:
 L^2(\mathbb{R})=V_J \oplus (\oplus _{j=-\infty}^{J}W_j)
 \end{equation}
 
-Finalmente, como el espacio $V_j$ se relaciona con el espacio detalle $A_J(t)$ y el $W_j(t)$ con los espacios de detalles $D_j(t)$:
+Finalmente, como el espacio $V_j$ se relaciona con la señal de aproximacion $A_J(t)$ y el $W_j(t)$ con la señal de detalle $D_j(t)$:
 
 \begin{equation}
 x(t) = A_J(t) + \sum_{j=-\infty}^{J}D_j(t)
@@ -193,7 +191,7 @@ Por lo tanto, se define a cualquier señal $x(t)$ como la suma de una \textbf{apr
 A partir de esta idea, se ve que es factible aplicar la transformada de wavelet para eliminar el ruido de una señal. Por lo tanto, si se busca una forma de filtrar los coeficientes a partir de parámetros relacionados con el ruido de la señal, se podrían eliminar las componentes no deseadas. Luego, a la hora de reconstruir la señal, se obtendría una versión sin ruido. Estos parámetros son llamados \textbf{umbrales} y se definirán más adelante.
 
 
-Teniendo en mente la idea del filtrado, y aún con el inconveniente de que el producto interno para calcular los coeficientes (eq.\ref{Beta} y \ref{Alfa}) requiere un alto costo computacional, se plantea una estrategia basada en un algoritmo que relacione las bases ortonormales de wavelets y los bancos de filtros \cite{CT}. Dicho algoritmo permite calcular los coeficientes $a^{j}$ y $d^{j}$ a partir de los coeficientes de aproximación de una escala anterior de resolución, es decir los $\alpha^{j-1}$, siendo estos los coeficientes que representan de manera perfecta la señal a analizar. Para llegar a esta relación se parte de la eq.\ref{NivApDet} donde:
+Teniendo en mente la idea del filtrado, y aún con el inconveniente de que el producto interno para calcular los coeficientes (eq.\ref{Beta} y \ref{Alfa}) requiere un alto costo computacional, se plantea una estrategia basada en un algoritmo que relacione las bases ortonormales de wavelets y los bancos de filtros \cite{CT}. Dicho algoritmo permite calcular los coeficientes $a^{j}$ y $d^{j}$ a partir de los coeficientes de aproximación de una escala anterior de mayor resolución, es decir los $a^{j-1}$. Para llegar a esta relación se parte de la eq.\ref{NivApDet} donde:
 %Explicar bancos de filtros o nombrarlo de otra forma
 
 \begin{equation}
