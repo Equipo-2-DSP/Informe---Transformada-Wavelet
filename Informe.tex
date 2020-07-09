@@ -99,7 +99,8 @@ Un análisis multiresolución para $L^{2}(\mathbb{R})$ consiste en una secuencia d
 \begin{equation*}
 ... \subset V_{-1} \subset V_{0} \subset V_{1} ...
 \end{equation*}
-\item[ii.] $\overline{\cup _{j\in \mathbb Z}V_j} = L^2(\mathbb R)$ y $\cap {j\in \mathbb Z}V_j = {0}$
+\item[ii.] $\overline{\cup _{j\in \mathbb Z}V_j} = L^2(\mathbb R)$ y $\cap_{j\in \mathbb Z} V_j = 
+\{0\}$
 \item[iii.] Para todo $j \in \mathbb{Z}$, $V_{j-1}=D(V_j)$
 \item[iv.] $f \in V_0 \rightarrow T_kf \in V_o$, $\forall k \in \mathbb{Z}$
 \item[v.] $\{T_k \phi \}_{k \in \mathbb{Z}}$ es una base ortonormal de $V_0$
@@ -181,7 +182,7 @@ Finalmente, como el espacio $V_j$ se relaciona con el espacio detalle $A_J(t)$ y
 x(t) = A_J(t) + \sum_{j=-\infty}^{J}D_j(t)
 \end{equation}
 
-Por lo tanto, se define a cualquier señal $x(t)$ como la suma de una \textbf{aproximación}, que sería la parte más ``burda'' de la señal, con sus infinitos \textbf{detalles}, que serían ``toques finales''. Esto se observa en la Fig.\ref{Tree}, donde se utilizó una wavelet symmet 4 y 3 de niveles de descomposición. En rojo la señal original, en azul la aproximación y en verde las tres señales de detalle correspondientes.
+Por lo tanto, se define a cualquier señal $x(t)$ como la suma de una \textbf{aproximación}, que sería la parte más ``burda'' de la señal, con sus infinitos \textbf{detalles}, que serían ``toques finales''. Esto se observa en la Fig.\ref{Tree}, donde se utilizó una wavelet symmet 4 y 3 niveles de descomposición. En rojo la señal original, en azul la aproximación y en verde las tres señales de detalle correspondientes.
   
 \begin{figure}[htb]
 	\centering
@@ -221,12 +222,82 @@ Si se desea obtener $ a^{j}_{k}\: y\: d^{j}_{k}$ a partir de $A_{j-1}$, se reali
 \begin{equation}
 <A_{j-1}(t),\psi _{j,k}(t)>=<A_{j}(t)+D_{j},\psi _{j,k}(t)>
 \end{equation}
+\begin{equation*}
+<A_{j-1}(t),\psi _{j,k}(t)>=<A_{j}(t),\psi _{j,k}(t)>+<D_{j}(t),\psi _{j,k}(t)>
+\end{equation*}
+\begin{equation*}
+<A_{j-1}(t),\psi _{j,k}(t)>=0+d_{k}^{j}
+\end{equation*}
+
 
 \begin{equation}
 <A_{j-1}(t),\phi _{j,k}(t)>=<A_{j}(t)+D_{j},\phi _{j,k}(t)>
 \end{equation}
+\begin{equation*}
+<A_{j-1}(t),\phi _{j,k}(t)>=<A_{j}(t),\psi _{j,k}(t)>+<D_{j}(t),\psi _{j,k}(t)>
+\end{equation*}
+\begin{equation*}
+<A_{j-1}(t),\phi _{j,k}(t)>=a_{k}^{j}+0
+\end{equation*}
 
-Operando matemáticamente se llega a que:
+Debido a los espacios que pertenece cada una se tiene que $D_{j}$ es perpendicular a la función $\phi _{j,k}$ y $A_{j}$ es perpendicular a la función $\psi _{j,k}$, con lo cual el producto interno entre  esas funciones ortogonales es 0 \\
+Como $A_{j-1}=\sum_{k \in \mathbb Z} a_{k}^{j-1} \phi_{j-1,k}(t)$:
+\begin{equation}
+a_{k}^{j}=<A_{j-1}(t),\phi _{j,k}(t)>=\left<\sum_{p \in \mathbb{Z}} a^{j-1}_p \phi_{j-1,p},\phi_{j,p}\right>
+\end{equation}
+\begin{equation*}
+a_{k}^{j}=\sum_{p \in \mathbb{Z}} a^{j-1}_p <\phi_{j-1,p},\phi_{j,p}>
+\end{equation*}
+
+\begin{equation}
+d_{k}^{j}=<A_{j-1}(t),\psi _{j,k}(t)>=\left<\sum_{p \in \mathbb{Z}} a^{j-1}_p \phi_{j-1,p},\psi_{j,p}\right>
+\end{equation}
+\begin{equation*}
+d_{k}^{j}=\sum_{p \in \mathbb{Z}} a^{j-1}_p <\phi_{j-1,p},\psi_{j,p}>
+\end{equation*}
+Calculando los productos internos:
+\begin{equation}
+<\phi_{j-1,p},\phi_{j,p}>=\int_\mathbb{R} \phi_{j-1,p}(t)\overline{\phi_{j,p}}(t) dt
+\end{equation}
+\begin{equation*}
+<\phi_{j-1,p},\phi_{j,p}>=\int_\mathbb{R}2^{-\frac{j}{2}}2^{-\frac{1}{2}} \phi(2^{-j+1}t-p)\overline{\phi}(2^{-j}t-k) dt
+\end{equation*}
+Haciendo cambio de variable $2^{-j}t-k=\frac{u}{2}$ y usando solo wavelets reales:
+\begin{equation}
+<\phi_{j-1,p},\phi_{j,p}>=\sqrt{2}\int_\mathbb{R} \phi(u-(p-2k))\frac{1}{2}\phi(\frac{u}{2})du
+\end{equation}
+Utilizando las siguientes ecuaciones:
+\begin{equation}
+\frac{1}{2}\phi(\frac{u}{2})=\sum_{n \in \mathbb{Z}} a_{n}\phi_{0,n}(u)
+\end{equation}
+\begin{equation}
+\frac{1}{2}\psi(\frac{u}{2})=\sum_{n \in \mathbb{Z}} b_{n}\phi_{0,n}(u)
+\end{equation}
+Como $\psi(\frac{u}{2})$ y $\phi(\frac{u}{2})$ pertenecen al espacio $V_{0}$ pueden escribirse en la base $\{\phi_{0,n}\}_{n \in \mathbb{Z}}$.
+Reemplazando lo anterior
+\begin{equation}
+<\phi_{j-1,p},\phi_{j,p}>=\sqrt{2}\int_\mathbb{R} \phi(u-(p-2k))\sum_{n \in \mathbb{Z}} a_{n}\phi_{0,n}(u)du
+\end{equation}
+\begin{equation*}
+<\phi_{j-1,p},\phi_{j,p}>=\sqrt{2}\sum_{n \in \mathbb{Z}}a_{n}\int_\mathbb{R} \phi_{0,p-2k}(u)\phi_{0,n}(u)du
+\end{equation*}
+\begin{equation*}
+<\phi_{j-1,p},\phi_{j,p}>=\sqrt{2}\sum_{n \in \mathbb{Z}}a_{n}< \phi_{0,p-2k},\phi_{0,n}>
+\end{equation*}
+
+Por analogía se obtiene:
+\begin{equation*}
+<\phi_{j-1,p},\psi_{j,p}>=\sqrt{2}\sum_{n \in \mathbb{Z}}b_{n}< \phi_{0,p-2k},\phi_{0,n}>
+\end{equation*}
+Como $\{ \phi_{0,n}\}_{n \in \mathbb{Z}}$ es una base ortonormal
+\begin{equation}
+<\phi_{j-1,p},\phi_{j,p}>=\sqrt{2}a_{p-2k}
+\end{equation}
+
+\begin{equation}
+<\phi_{j-1,p},\psi_{j,p}>=\sqrt{2}b_{p-2k}
+\end{equation}
+Reemplazando con las ecuaciones anteriores 
 
 \begin{equation}
 a^{j}_{k}=\sum_{p \in \mathbb Z} a^{j-1}_{p}<\psi _{j-1,p}(t),\psi _{j,k}(t)>=\sum_{p \in \mathbb Z}a^{j-1}_{p}\sqrt{2} a_{p-2k}
@@ -236,18 +307,8 @@ a^{j}_{k}=\sum_{p \in \mathbb Z} a^{j-1}_{p}<\psi _{j-1,p}(t),\psi _{j,k}(t)>=\s
 d^{j}_{k}=\sum_{p \in \mathbb Z} a^{j-1}_{p}<\psi _{j-1,p}(t),\phi _{j,k}(t)>=\sum_{p \in \mathbb Z}a^{j-1}_{p}\sqrt{2} b_{p-2k}
 \end{equation}
 
-Donde:
 
-\begin{equation}
-	\sqrt{2} a_{p-2k}=<\phi _{j-1,p}(t),\phi _{j,k}(t)>
-\end{equation}
-	
-\begin{equation}
-	\sqrt{2} b_{p-2k}=<\phi _{j-1,p}(t),\psi _{j,k}(t)>
-\end{equation}
-
-
-Se observa que estos coeficientes son productos internos de funciones ya conocidas, la función wavelet y su función de escala. Estos valores ya fueron calculados y se los asume como conocidos, por lo cual si se consideran como los coeficientes de filtros se puede definir a $LoD=\{[LoD]_{n}\}_{n \in \mathbb{Z}}$ y a $HiD=\{[Hid]_{n}\}_{n \in \mathbb{Z}}$ como el filtro pasabajos y un filtro pasaaltos respectivamente.
+Se observa que los coeficientes $a_{p-2k}$ y$b_{p-2k}$son productos internos de funciones ya conocidas, la función wavelet y su función de escala. Estos valores ya fueron calculados y se los asume como conocidos, por lo cual si se consideran como los coeficientes de filtros se puede definir a $LoD=\{[LoD]_{n}\}_{n \in \mathbb{Z}}$ y a $HiD=\{[Hid]_{n}\}_{n \in \mathbb{Z}}$ como el filtro pasabajos y un filtro pasaaltos respectivamente.
 
 
 Por lo cual:
@@ -259,6 +320,8 @@ Por lo cual:
 \begin{equation}
 [HiD]_{n}=\sqrt{2}  b_{-n}
 \end{equation}
+
+Se tiene esta caracterización de que los $a_{-n}$ son coeficientes de un filtro pasa bajo ya que son los encargados de conservar la forma de la señal es decir la aproximación  y los $b_{-n}$ como coeficientes de un filtro pasa alto ya que al ser los que conservan los detalles de la señal se asume que se encuentras en frecuencias altas.
 
 Quedando entonces definidos los coeficientes en un nivel j como:
 
@@ -311,7 +374,7 @@ a^{j-1}_{k}=\sum_{p \in \mathbb Z} a^{j}_{p}[LoR]_{k-2p}+\sum_{p \in \mathbb Z} 
 Donde LoR y HoR son los filtros pasabajos y pasaaltos de reconstrucción.
 
 
-Como se mencionó anteriormente, las señales $a^{j}$ y $d^{j}$ tienen una dimensión menor a la original que se desea reconstruir, por lo que es necesaria ``rellenarlas" para que tengan la dimensión correcta.
+Como se mencionó anteriormente, las señales $a^{j}$ y $d^{j}$ tienen una dimensión menor a la original que se desea reconstruir, por lo que es necesaria ``rellenarlas" para que tengan la dimensión correcta, el método de rellenado mas utilizado es el de inserción de ceros. 
 
 
 %agregar imagen de bloque de reconstruccion.
@@ -425,13 +488,13 @@ $ \\ $
 \subsubsection{\textbf{NormalShrink}}
 este algoritmo suple la desventaja de BayesShrink ya que no se necesita información de la señal sin ruido y presenta todas las ventajas incorporadas de utilizar información de la señal a analizar. Se lo define como:
 \begin{equation}
-\tau_{normal} = \frac{\beta_k \sigma_n^2}{\sigma_s}
+\tau_{normal} = \frac{\beta_k \sigma_n^2}{\sigma_{o}}
 \end{equation}
 Donde:
 \begin{equation}
 \beta_k=\sqrt{\frac{ln(size(H_k))}{J}}
 \end{equation}
-Y $\sigma_s$ es el desvío estándar de la señal de cada nivel.
+Y $\sigma_o$ es el desvío estándar de la señal que se quiere filtrar.
 
 $ \\ $
 
@@ -571,7 +634,8 @@ Los estadísticos que se utilizaron para comparar son el PSNR y el SSIM. El PSNR 
 
 
 \subsection{Resultados obtenidos al variar la cantidad de niveles de descomposición.}
-\begin{table}
+En esta sección se observan los resultados variando la cantidad de niveles de descomposición teniendo fijo la wavelet sym8, el tipo de umbralización soft y el algoritmo de umbralización es el NormalShrink.
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrrr}
 \toprule
@@ -583,10 +647,18 @@ Wave &  18.63 &  23.34 &  \bf{26.70} &  24.71 &  24.65 \\
 \bottomrule
 \end{tabular}
 \label{tabla-levels}
-\caption{PSNR utilizando wavelet Sym8, umbral normalshrink, método soft.}
+\caption{Valor de PSNR obtenido.}
 \end{table}
 
-\begin{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.53\textwidth]{Fig/Imgs/Levels}
+\label{grafico-levels}
+\caption{Grafico asociado a la Tab.1.}
+\end{figure}
+
+
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrrr}
 \toprule
@@ -598,10 +670,10 @@ Wave &  0.586 &  0.761 &  \bf{0.839} &  0.820 &  0.803 \\
 \bottomrule
 \end{tabular}
 \label{tabla-levels-SSIM}
-\caption{SSIM utilizando wavelet Sym8, umbral normalshrink, método soft.}
+\caption{Valor de SSIM obtenido.}
 \end{table}
 
-\begin{figure}
+\begin{figure}[H]
         \centering
         \begin{subfigure}[H]{0.22\textwidth}
             \centering
@@ -643,7 +715,8 @@ A partir de los estadísticos vemos que el nivel 2 brinda mejores resultados numé
 
 
 \subsection{Resultados obtenidos para los dos tipos de umbralización.}
-\begin{table}
+En esta sección se observan los resultados variando el tipo de umbralización teniendo fijo la wavelet sym8, el algoritmo de umbralización es el NormalShrink y la cantidad de niveles de descomposición igual a 2.
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrr}
 \toprule
@@ -655,9 +728,16 @@ Wave &  18.63 &  \bf{26.70} &  20.85 \\
 \bottomrule
 \end{tabular}
 \label{tabla-modos}
-\caption{PSNR utilizando wavelet Sym8, dos niveles de descomposición, umbral normalshrink.}
+\caption{Valore PSNR obtenido.}
 \end{table}
-\begin{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.53\textwidth]{Fig/Imgs/mode}
+\label{grafico-levels}
+\caption{Grafico asociado a la Tab.3.}
+\end{figure}
+
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrr}
 \toprule
@@ -669,9 +749,9 @@ Wave &  0.586 &  \bf{0.839} &  0.755 \\
 \bottomrule
 \end{tabular}
 \label{tabla-modos-SSIM}
-\caption{SSIM utilizando wavelet Sym8, dos niveles de descomposición, umbral normalshrink.}
+\caption{Valor de SSIM obtenido.}
 \end{table}
-\begin{figure}
+\begin{figure}[H]
         \centering
         \begin{subfigure}[H]{0.24\textwidth}
             \centering
@@ -697,8 +777,8 @@ Wave &  0.586 &  \bf{0.839} &  0.755 \\
 Si analizamos la imagen resultante al utilizar el tipo de umbralización Hard, vemos que esta pierde intensidad de color en los píxeles. Esto se debe a las zonas discontinuas que presenta (fig. \ref{}). En cambio el tipo Soft suaviza de forma mas suave generando una perdida menor de intesidad, esto también se ve reflejado en los mejores resultados de los estadísticos.
 
 \subsection{Resultados obtenidos para los distintos algoritmos de umbralización.}
-
-\begin{table}
+En esta sección se observan los resultados variando los algoritmos de umbralización teniendo fijo la cantidad de niveles de descomposición en 2, la wavelet que se utiliza es la sym8, y el tipo de umbralización soft.
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -710,9 +790,16 @@ Wave &  18.63 &      26.74 &  26.70 &  26.86 &   \bf{26.70} &  25.56 \\
 \bottomrule
 \end{tabular}
 \label{tabla-umbrales}
-\caption{PSNR utilizando wavelet Sym8, dos niveles de descomposición, método soft.}
+\caption{Valor de PSNR obtenido.}
 \end{table}
-\begin{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.53\textwidth]{Fig/Imgs/umbral}
+\label{grafico-levels}
+\caption{Grafico asociado a la Tab.5.}
+\end{figure}
+
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrrrr}
 \toprule
@@ -724,38 +811,10 @@ Wave &  0.586 &   0.830 &  0.829 &  0.833 &  \bf{0.839} &  0.823 \\
 \bottomrule
 \end{tabular}
 \label{tabla-umbrales-SSIM}
-\caption{SSIM utilizando wavelet Sym8, dos niveles de descomposición, método soft.}
+\caption{Valor de SSIM obtenido.}
 \end{table}
+
 \begin{figure}[H]
-        \centering
-        \begin{subfigure}[H]{0.2\textwidth}
-            \centering
-            \includegraphics[width=\textwidth]{Fig/Wav/2_normal_soft_haar_Wave}
-            \caption[Lenna.]%
-           {{\small Wavelet haar.}}    
-            \label{Lenna}
-        \end{subfigure}
-     %   \hfill
-        \begin{subfigure}[H]{0.2\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Fig/Wav/2_normal_soft_db4_Wave}
-            \caption[]%
-            {{\small Wavelet db4.}}    
-            \label{House}
-        \end{subfigure}
-        \begin{subfigure}[H]{0.2\textwidth}  
-            \centering 
-            \includegraphics[width=\textwidth]{Fig/Wav/2_normal_soft_sym8_Wave}
-            \caption[]%
-            {{\small Wavelet sym8.}}    
-            \label{House}
-        \end{subfigure}
-       \vskip\baselineskip
-        \label{fig-imagenes-filtradas-modes}
-        \caption[ The average and standard deviation of critical parameters ]
-         {\small Imágenes filtradas con distintas wavelet.} 
-\end{figure}
-\begin{figure}
         \centering
         \begin{subfigure}[H]{0.22\textwidth}
             \centering
@@ -799,8 +858,10 @@ Wave &  0.586 &   0.830 &  0.829 &  0.833 &  \bf{0.839} &  0.823 \\
         \label{fig-imagenes-filtradas-thr}
 \end{figure}
 
-
-\begin{table}
+\subsection{Resultados obtenidos para cada tipo de Wavelet}
+En esta sección se observan los resultados variando el tipo de wavelet utilizada, teniendo fijo la 
+la cantidad de niveles de descomposición igual a 2, el algoritmo de umbralización NormalShrink y el tipo soft
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrr}
 \toprule
@@ -812,10 +873,19 @@ Wave &  18.63 &  24.67 &  \bf{26.87} &  26.70 \\
 \bottomrule
 \end{tabular}
 
-\caption{PSNR utilizando dos niveles de descomposición,umbral normalshrink, método soft.}
+\caption{Valor de PSNR obtenido.}
 \label{tabla-wavelets}
 \end{table}
-\begin{table}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.53\textwidth]{Fig/Imgs/wavelet}
+\label{grafico-wavelet}
+\caption{Grafico asociado a la Tab.7.}
+\end{figure}
+
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrr}
 \toprule
@@ -829,12 +899,39 @@ Wave &  0.586 &  0.805 &  0.836 &  \bf{0.839} \\
 \caption{SSIM utilizando dos niveles de descomposición,umbral normalshrink, método soft.}
 \label{tabla-wavelets-SSIM}
 \end{table}
-
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[H]{0.2\textwidth}
+            \centering
+            \includegraphics[width=\textwidth]{Fig/Wav/Haar}
+            \caption[Lenna.]%
+           {{\small Wavelet haar.}}    
+            \label{Lenna}
+        \end{subfigure}
+     %   \hfill
+        \begin{subfigure}[H]{0.215\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{Fig/Wav/db4}
+            \caption[]%
+            {{\small Wavelet db4.}}    
+            \label{House}
+        \end{subfigure}
+        \begin{subfigure}[H]{0.2\textwidth}  
+            \centering 
+            \includegraphics[width=\textwidth]{Fig/Wav/Sym8}
+            \caption[]%
+            {{\small Wavelet sym8.}}    
+            \label{House}
+        \end{subfigure}
+       \vskip\baselineskip
+        \label{fig-imagenes-filtradas-modes}
+        \caption[ The average and standard deviation of critical parameters ]
+         {\small Imágenes filtradas con distintas wavelet,utilizando dos niveles de descomposición,umbral normalshrink, método soft.} 
+\end{figure}
 %parrafo haciendo referencia porque los mejores parametros son los que se dijeron antes
-
+Los resultados no presentan mucha discrepancia entre si pero se observa que la wavelet haar al ser recta no puede representar bien superficies curvas, pero si lo hace de buena en imágenes que presentan bordes rectos, como en el caso de la casa. Esto queda reflejado en la fig.17 donde el PSNR es mayor para la imagen HOUSE.
 \subsection{Comparación con otros métodos}
 En esta sub-sección comparamos el filtrado de wavelet con dos filtros ya implementados para la supresión de ruido.
-
 
 \begin{figure}[H]
         \centering
@@ -866,7 +963,7 @@ En esta sub-sección comparamos el filtrado de wavelet con dos filtros ya impleme
          {\small House filtrada con los distintos metodos.}
          \label{fig-comp-metodos} 
 \end{figure}
-\begin{table}[]
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrr}
 \toprule
@@ -880,7 +977,7 @@ Wave &  24.21 &    24.33 &   \bf{27.00} &     26.86 \\
 \label{tabla-comparacion}
 \caption{PSNR para los distintos métodos de filtrado.}
 \end{table}
-\begin{table}[]
+\begin{table}[H]
 \centering 
 \begin{tabular}{lrrrr}
 \toprule
@@ -954,13 +1051,13 @@ En los resultados se observa que el filtro es capaz de eliminar el ruido en imág
 A partir de los resultados obtenidos se puede concluir de manera general que el método de filtrado de ruido utilizando la transformada de wavelet es una herramienta útil. Viendo las Fig.\ref{fig-imagenes-prueba} y \ref{fig-imagenes-filtradas} se observa que el resultado de filtrar el ruido agregado artificialmente es aceptable. Si bien se presenta un difuminado que provoca pérdidas de detalles, esto es normal en la mayoría de métodos que utilizan umbrales, justamente por la necesidad de eliminar el ruido. Es importante recalcar la elección del nivel de descomposición y su relación con los estadísticos.
 En las Tab.1 y 2, el nivel 2 es el que brinda mejores resultados numéricamente. Sin embargo, a la hora de ver las imágenes, el nivel 6 muestra menor cantidad de ruido que la imagen del nivel 2. Esta discrepancia se puede deber a que si bien la imagen del nivel 2 presenta ruido visible, la intensidad de los píxeles no varía tanto respecto a la original como si lo hace el nivel 6, lo que genera en la forma de calcular los estadísticos un mejor resultado. Por otro lado, la razón por la cual el nivel seis elimina mayor cantidad de ruido es que el nivel de descomposición aumenta y esto permite filtrar una mayor cantidad de coeficientes de detalles.
 Se puede decir entonces, que se elimina una cantidad superior de ruido a costa de perder detalles. 
-La wavelet utilizada sym8 es congruente que brinde mejores resultados ya que la forma de este tipo de onda se adapta de manera óptima a los detalles de la imagen por tener una forma más suave que la wavelet haar y db4. Por último, el algoritmo de umbralización normalShrink brinda un mejor filtrado debido a que utiliza información de la imagen y no solo de la varianza del ruido.
+La wavelet utilizada sym8 es congruente que brinde mejores resultados ya que la forma de este tipo de onda se adapta de mejor manera a los detalles de la imagen por tener una forma más suave que la wavelet haar y db4. Por último, el algoritmo de umbralización normalShrink brinda un mejor filtrado debido a que utiliza información de la imagen y no solo de la varianza del ruido.
 
 
 Además, es interesante analizar el resultado de la Tab.\ref{tabla-wavelets}. Para la wavelet haar la casa obtiene mejor PSNR, lo que es coherente por la forma de la haar y por los bordes rectos que presenta la casa. La forma discontinua y ``dura'' de esta wavelet no suaviza los bordes lo que permite que sobrevivan al filtrado. Sin embargo, los detalles de la imagen que no posean estas características se ven suprimidos, y genera una mayor discrepancia con la imagen original. Este resultado, es congruente con el de la SSIM (Tab.\ref{tabla-wavelets-SSIM}).
 
 
-Ahora, analizando los resultados con los métodos de filtrado gaussiano y wiener, se ve en la Fig.\ref{fig-comp-metodos} que estos dos métodos no quitan tanto el ruido como el método de la transformada wavelet. Sin embargo, presentan un menor difuminado. Si se observa la Tab.\ref{tab.SSIM-filters}, los resultados de la transformada wavelet dan un mejor SSIM comparado con wiener y gaussiano. Concluyendo, la transformada de wavelet utilizada para filtrar ruido actúa de manera óptima al compararlo con métodos especializados en el filtrado de ruido.
+Ahora, analizando los resultados con los métodos de filtrado gaussiano y wiener, se ve en la Fig.\ref{fig-comp-metodos} que estos dos métodos no quitan tanto el ruido como el método de la transformada wavelet. Sin embargo, presentan un menor difuminado. Si se observa la Tab.\ref{tab.SSIM-filters}, los resultados de la transformada wavelet dan un mejor SSIM comparado con wiener y gaussiano, pero el PSNR da valores superiores para el filtro de Wiener. Concluyendo, la transformada de wavelet utilizada para filtrar ruido actúa de manera correcta al compararlo con métodos especializados en el filtrado de ruido.
 
 
 
